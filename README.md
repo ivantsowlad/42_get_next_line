@@ -18,8 +18,7 @@ This project is part of the 42Prague curriculum.
 ```
 .
 ├── *.c
-├── *.h
-└── Makefile
+└── *.h
 ```
 
 ## How to Use
@@ -30,13 +29,15 @@ This project is part of the 42Prague curriculum.
     cd get_next_line
     ```
 
+## There is no Makefile in this project because of 42 subject. But there are 2 options: add Makefile or add main.c and compile it manually.
+
 2. **Build the library:**
     ```bash
     make
     ```
    This will generate the `get_next_line.a` static library file.
 
-3. **Include in your project:**
+4. **Include in your project:**
    - Add `get_next_line.a` to your project's linking step.
    - Include `get_next_line.h` in your source files.
 
@@ -44,7 +45,7 @@ This project is part of the 42Prague curriculum.
     #include "get_next_line.h"
     ```
 
-4. **Clean built files:**
+5. **Clean built files:**
     ```bash
     make clean      # Removes object files
     make fclean     # Removes object files and get_next_line.a
